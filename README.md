@@ -4,4 +4,4 @@ This is a small project that I'm working on for a friend. I'm extremely busy wit
 
 This code can be used to find the number of toll booths that could possibly be crossed between multiple points. Please credit 
 
-To make this work you need a google places API key, paste it in where the smiley is in the dotenv
+To make this work you need a google places API key, paste it in where the smiley is in the dotenv.
