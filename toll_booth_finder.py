@@ -179,8 +179,10 @@ def read_xlsx_file(file_path):
 
 #read in data from xlsx and store in a struct
 input_file_path = "input.xlsx"
-output_file_path = "output.tsv"
 data = read_xlsx_file(input_file_path)
+output_file_path = "output.tsv"
+with open(output_file_path, 'w') as file:
+    pass
 
 #get api key
 api_key = os.getenv("GOOGLE_MAPS_API_KEY")
