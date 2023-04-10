@@ -10,7 +10,7 @@ import math
 
 load_dotenv()
 
-def get_toll_booths_along_route(api_key, start_point, destinations, radius=5000, sampling_interval=50):
+def get_toll_booths_along_route(api_key, start_point, destinations, radius=50, sampling_interval=50):
     # Get the route from the Directions API
     waypoints = '|'.join([f'via:{lat},{lng}' for lat, lng in destinations])
     directions_url = f"https://maps.googleapis.com/maps/api/directions/json?origin={start_point[0]},{start_point[1]}&destination={destinations[-1][0]},{destinations[-1][1]}&waypoints={waypoints}&key={api_key}"
